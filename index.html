@@ -1,32 +1,48 @@
 <!DOCTYPE html>
-<html lang="nl" class="scroll-smooth">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enhanced Landing Page</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <html lang="nl" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vitaalzorg Sta Op Stoel | Premium Comfort & Mobiliteit</title>
     <meta name="description" content="Ontdek onze premium sta op stoelen met 10% korting. Ervaar optimaal comfort en mobiliteit met Vitaalzorg.">
     <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
 </head>
 <body class="antialiased bg-gray-50">
-    <header class="fixed w-full bg-white/95 backdrop-blur-sm shadow-sm z-50" x-data="{ isOpen: false }">
+    <header class="fixed w-full bg-white/95 backdrop-blur-sm shadow-sm z-50">
         <nav class="container mx-auto px-4 sm:px-6 lg:px-8 py-4">
             <div class="flex items-center justify-between">
-                <a href="/" class="text-2xl font-bold text-gray-800 hover:text-gray-600 transition-colors duration-300">
+                <a href="https://readthisnow.github.io/vitaalzorg-sta-op-stoel-2025-04-27-nijv1" class="text-2xl font-bold text-gray-800 hover:text-gray-600 transition-colors duration-300">
                     Vitaalzorg
                 </a>
-                <button @click="isOpen = !isOpen" class="lg:hidden p-2 rounded-md text-gray-600 hover:text-gray-900 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-blue-500">
-                    <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path x-show="!isOpen" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
-                        <path x-show="isOpen" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
-                    </svg>
+                <button class="mobile-menu-button md:hidden p-2 rounded-md text-gray-600 hover:text-gray-900 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-blue-500" aria-label="Toggle menu">
+                    <i class="fas fa-bars text-2xl"></i>
                 </button>
-                <div class="hidden lg:flex space-x-8">
+                <div class="hidden md:flex space-x-8">
                     <a href="#features" class="text-gray-600 hover:text-gray-900 transition-colors duration-300">Kenmerken</a>
                     <a href="#benefits" class="text-gray-600 hover:text-gray-900 transition-colors duration-300">Voordelen</a>
+                    <a href="#testimonials" class="text-gray-600 hover:text-gray-900 transition-colors duration-300">Reviews</a>
+                    <a href="#about" class="text-gray-600 hover:text-gray-900 transition-colors duration-300">Over Ons</a>
                     <a href="#faq" class="text-gray-600 hover:text-gray-900 transition-colors duration-300">FAQ</a>
                     <a href="#contact" class="text-gray-600 hover:text-gray-900 transition-colors duration-300">Contact</a>
                 </div>
+            </div>
+            <div class="mobile-menu hidden md:hidden mt-4 bg-white rounded-lg shadow-lg">
+                <a href="#features" class="block px-4 py-2 text-gray-600 hover:bg-gray-100">Kenmerken</a>
+                <a href="#benefits" class="block px-4 py-2 text-gray-600 hover:bg-gray-100">Voordelen</a>
+                <a href="#testimonials" class="block px-4 py-2 text-gray-600 hover:bg-gray-100">Reviews</a>
+                <a href="#about" class="block px-4 py-2 text-gray-600 hover:bg-gray-100">Over Ons</a>
+                <a href="#faq" class="block px-4 py-2 text-gray-600 hover:bg-gray-100">FAQ</a>
+                <a href="#contact" class="block px-4 py-2 text-gray-600 hover:bg-gray-100">Contact</a>
             </div>
         </nav>
     </header>
@@ -36,20 +52,20 @@
             <div class="container mx-auto px-4 sm:px-6 lg:px-8">
                 <div class="max-w-4xl mx-auto text-center">
                     <h1 class="text-4xl sm:text-5xl lg:text-6xl font-bold text-gray-900 leading-tight mb-6">
-                        Vitaalzorg Sta Op Stoel
+                        Ervaar Ultiem Comfort met Vitaalzorg Sta Op Stoelen
                     </h1>
                     <p class="text-xl sm:text-2xl text-gray-600 mb-8">
-                        Tijdelijk 10% Korting | Optimaal Comfort & Mobiliteit
+                        Profiteer Nu van 10% Korting | Gratis Thuisadvies | 5 Jaar Garantie
                     </p>
                     <div class="flex flex-col sm:flex-row justify-center gap-4">
                         <a href="https://sta-opstoelen.nl" class="inline-flex items-center justify-center px-8 py-4 text-lg font-semibold text-white bg-blue-600 rounded-full hover:bg-blue-700 transform hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl">
-                            Bekijk Aanbod
+                            Bekijk Collectie
                             <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/>
                             </svg>
                         </a>
                         <a href="#contact" class="inline-flex items-center justify-center px-8 py-4 text-lg font-semibold text-blue-600 bg-white rounded-full hover:bg-gray-50 transform hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl border border-blue-100">
-                            Gratis Advies
+                            Vraag Gratis Advies
                         </a>
                     </div>
                 </div>
@@ -68,9 +84,28 @@
                             </svg>
                         </div>
                         <h3 class="text-xl font-semibold text-gray-900 mb-3">Ergonomisch Design</h3>
-                        <p class="text-gray-600">Optimaal zitcomfort door wetenschappelijk onderbouwd ontwerp.</p>
+                        <p class="text-gray-600">Wetenschappelijk ontwikkeld voor optimale ondersteuning van rug en nek. Vermindert drukpunten en bevordert een gezonde zithouding.</p>
                     </div>
-                    <!-- Add more feature cards -->
+                    
+                    <div class="p-6 bg-white rounded-xl shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300">
+                        <div class="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center mb-6">
+                            <svg class="w-6 h-6 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/>
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-semibold text-gray-900 mb-3">Krachtige Motor</h3>
+                        <p class="text-gray-600">Fluisterstille dual-motor technologie voor soepele sta-op beweging. Ondersteunt gewicht tot 150kg met perfecte balans.</p>
+                    </div>
+
+                    <div class="p-6 bg-white rounded-xl shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300">
+                        <div class="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center mb-6">
+                            <svg class="w-6 h-6 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-semibold text-gray-900 mb-3">Memory Functie</h3>
+                        <p class="text-gray-600">Slaat uw favoriete zitposities op voor direct comfort. Inclusief handige afstandsbediening met verlichte knoppen.</p>
+                    </div>
                 </div>
             </div>
         </section>
@@ -79,7 +114,126 @@
             <div class="container mx-auto px-4 sm:px-6 lg:px-8">
                 <h2 class="text-3xl sm:text-4xl font-bold text-center text-gray-900 mb-16">Voordelen</h2>
                 <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
-                    <!-- Add benefits content -->
+                    <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300">
+                        <h3 class="text-2xl font-semibold mb-4">Verbeterde Mobiliteit</h3>
+                        <ul class="space-y-4">
+                            <li class="flex items-start">
+                                <svg class="w-6 h-6 text-green-500 mr-3 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                                </svg>
+                                <span>Soepel opstaan zonder hulp van anderen</span>
+                            </li>
+                            <li class="flex items-start">
+                                <svg class="w-6 h-6 text-green-500 mr-3 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                                </svg>
+                                <span>Vermindert belasting op gewrichten</span>
+                            </li>
+                            <li class="flex items-start">
+                                <svg class="w-6 h-6 text-green-500 mr-3 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                                </svg>
+                                <span>Bevordert zelfstandigheid</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300">
+                        <h3 class="text-2xl font-semibold mb-4">Optimaal Comfort</h3>
+                        <ul class="space-y-4">
+                            <li class="flex items-start">
+                                <svg class="w-6 h-6 text-green-500 mr-3 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                                </svg>
+                                <span>Drukverlagende zitting met memory foam</span>
+                            </li>
+                            <li class="flex items-start">
+                                <svg class="w-6 h-6 text-green-500 mr-3 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                                </svg>
+                                <span>Verstelbare rugsteun en hoofdsteun</span>
+                            </li>
+                            <li class="flex items-start">
+                                <svg class="w-6 h-6 text-green-500 mr-3 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                                </svg>
+                                <span>Verwarmingsfunctie voor extra comfort</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="testimonials" class="py-24 bg-white">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="text-3xl sm:text-4xl font-bold text-center text-gray-900 mb-16">Wat Onze Klanten Zeggen</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                    <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300">
+                        <div class="flex text-yellow-400 mb-3">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p class="text-gray-600 mb-4">"Deze stoel heeft mijn leven veranderd. Na mijn heupoperatie kon ik eindelijk weer zelfstandig opstaan. De kwaliteit is uitstekend!"</p>
+                        <p class="font-semibold">Maria de Vries</p>
+                        <p class="text-sm text-gray-500">Gepensioneerd docent</p>
+                    </div>
+
+                    <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300">
+                        <div class="flex text-yellow-400 mb-3">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p class="text-gray-600 mb-4">"Geweldige service! De adviseur nam alle tijd om de juiste stoel te vinden. De sta-op functie werkt perfect."</p>
+                        <p class="font-semibold">Jan Bakker</p>
+                        <p class="text-sm text-gray-500">Revalidatietherapeut</p>
+                    </div>
+
+                    <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300">
+                        <div class="flex text-yellow-400 mb-3">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p class="text-gray-600 mb-4">"De memory functie is fantastisch. Elke keer weer de perfecte zitpositie. Ook de warmtefunctie gebruik ik dagelijks."</p>
+                        <p class="font-semibold">Peter van Dijk</p>
+                        <p class="text-sm text-gray-500">Accountant</p>
+                    </div>
+
+                    <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300">
+                        <div class="flex text-yellow-400 mb-3">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p class="text-gray-600 mb-4">"Eindelijk geen rugpijn meer na lang zitten. De ergonomische vormgeving maakt echt verschil. Beste investering in jaren!"</p>
+                        <p class="font-semibold">Anna Jansen</p>
+                        <p class="text-sm text-gray-500">Gepensioneerd verpleegkundige</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="py-24 bg-gray-50">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="text-3xl sm:text-4xl font-bold text-center text-gray-900 mb-16">Over Vitaalzorg</h2>
+                <div class="max-w-3xl mx-auto space-y-8">
+                    <p class="text-lg text-gray-600">
+                        Vitaalzorg begon in 1995 als familiebedrijf met één missie: het verbeteren van de levenskwaliteit van mensen met mobiliteitsbeperkingen. Wat begon als een kleine showroom is uitgegroeid tot een toonaangevende specialist in premium sta-op stoelen, met vijf vestigingen door heel Nederland.
+                    </p>
+                    <p class="text-lg text-gray-600">
+                        Onze kernwaarden zijn kwaliteit, innovatie en persoonlijke service. We geloven dat iedereen recht heeft op optimaal zitcomfort en zelfstandigheid. Daarom werken we continu aan de ontwikkeling van nieuwe technologieën en features die het leven van onze klanten verbeteren.
+                    </p>
                 </div>
             </div>
         </section>
@@ -88,33 +242,112 @@
             <div class="container mx-auto px-4 sm:px-6 lg:px-8">
                 <h2 class="text-3xl sm:text-4xl font-bold text-center text-gray-900 mb-16">Veelgestelde Vragen</h2>
                 <div class="max-w-3xl mx-auto space-y-4">
-                    <!-- Add FAQ items -->
+                    <div class="border border-gray-200 rounded-lg">
+                        <button @click="selected !== 1 ? selected = 1 : selected = null" class="flex justify-between items-center w-full p-4 text-left">
+                            <span class="text-lg font-semibold">Wat is de levertijd van een sta-op stoel?</span>
+                            <svg class="w-6 h-6 transform transition-transform duration-200" :class="{'rotate-180': selected == 1}" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+                            </svg>
+                        </button>
+                        <div x-show="selected == 1" class="p-4 pt-0 text-gray-600">
+                            Standaard modellen zijn binnen 2-3 weken leverbaar. Voor maatwerk stoelen geldt een levertijd van 4-6 weken. Spoedlevering is mogelijk in overleg.
+                        </div>
+                    </div>
+
+                    <div class="border border-gray-200 rounded-lg">
+                        <button @click="selected !== 2 ? selected = 2 : selected = null" class="flex justify-between items-center w-full p-4 text-left">
+                            <span class="text-lg font-semibold">Wordt de stoel thuis geïnstalleerd?</span>
+                            <svg class="w-6 h-6 transform transition-transform duration-200" :class="{'rotate-180': selected == 2}" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+                            </svg>
+                        </button>
+                        <div x-show="selected == 2" class="p-4 pt-0 text-gray-600">
+                            Ja, onze ervaren monteurs leveren en installeren de stoel bij u thuis. Ze geven ook uitgebreide uitleg over alle functies en gebruik.
+                        </div>
+                    </div>
+
+                    <div class="border border-gray-200 rounded-lg">
+                        <button @click="selected !== 3 ? selected = 3 : selected = null" class="flex justify-between items-center w-full p-4 text-left">
+                            <span class="text-lg font-semibold">Wat houdt de garantie in?</span>
+                            <svg class="w-6 h-6 transform transition-transform duration-200" :class="{'rotate-180': selected == 3}" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+                            </svg>
+                        </button>
+                        <div x-show="selected == 3" class="p-4 pt-0 text-gray-600">
+                            U krijgt 5 jaar volledige garantie op constructie, motor en mechaniek. Voor de bekleding geldt 2 jaar garantie. Service aan huis is inbegrepen.
+                        </div>
+                    </div>
+
+                    <div class="border border-gray-200 rounded-lg">
+                        <button @click="selected !== 4 ? selected = 4 : selected = null" class="flex justify-between items-center w-full p-4 text-left">
+                            <span class="text-lg font-semibold">Is er een proefperiode mogelijk?</span>
+                            <svg class="w-6 h-6 transform transition-transform duration-200" :class="{'rotate-180': selected == 4}" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+                            </svg>
+                        </button>
+                        <div x-show="selected == 4" class="p-4 pt-0 text-gray-600">
+                            Ja, we bieden een 30 dagen proefperiode. Bent u niet tevreden? Dan halen we de stoel kosteloos op en krijgt u het volledige aankoopbedrag terug.
+                        </div>
+                    </div>
+
+                    <div class="border border-gray-200 rounded-lg">
+                        <button @click="selected !== 5 ? selected = 5 : selected = null" class="flex justify-between items-center w-full p-4 text-left">
+                            <span class="text-lg font-semibold">Zijn er financieringsmogelijkheden?</span>
+                            <svg class="w-6 h-6 transform transition-transform duration-200" :class="{'rotate-180': selected == 5}" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+                            </svg>
+                        </button>
+                        <div x-show="selected == 5" class="p-4 pt-0 text-gray-600">
+                            We bieden verschillende financieringsopties, waaronder gespreid betalen zonder rente. Ook adviseren we over mogelijke vergoedingen via uw zorgverzekeraar.
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
 
-        <section id="contact" class="py-24 bg-gradient-to-br from-blue-600 to-blue-800 text-white">
-            <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+        <section id="contact" class="py-24 bg-gradient-to-br from-blue-600 to-blue-800 text-white" style="background-image: url('https://images.unsplash.com/photo-1568992687947-868a62a9f521?ixlib=rb-1.2.1&auto=format&fit=crop&w=1920&q=80'); background-size: cover; background-position: center;">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
                 <div class="max-w-3xl mx-auto text-center">
-                    <h2 class="text-3xl sm:text-4xl font-bold mb-8">Neem Nu Contact Op</h2>
-                    <p class="text-xl mb-12">Profiteer van 10% korting en ontvang gratis advies</p>
-                    <a href="mailto:support@example.com" class="inline-flex items-center justify-center px-8 py-4 text-lg font-semibold text-blue-600 bg-white rounded-full hover:bg-gray-100 transform hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl">
-                        Direct Contact
-                    </a>
+                    <h2 class="text-3xl sm:text-4xl font-bold mb-8">Start Vandaag Nog</h2>
+                    <p class="text-xl mb-12">Profiteer van 10% Introductiekorting en Ontvang Gratis Advies aan Huis</p>
+                    <div class="flex flex-col sm:flex-row justify-center gap-4">
+                        <a href="mailto:info@vitaalzorg.nl" class="inline-flex items-center justify-center px-8 py-4 text-lg font-semibold text-blue-600 bg-white rounded-full hover:bg-gray-100 transform hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl">
+                            <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+                            </svg>
+                            E-mail Ons
+                        </a>
+                        <a href="tel:0800-1234567" class="inline-flex items-center justify-center px-8 py-4 text-lg font-semibold text-white bg-blue-600 rounded-full hover:bg-blue-700 transform hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl">
+                            <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/>
+                            </svg>
+                            Bel 0800-1234567
+                        </a>
+                    </div>
                 </div>
             </div>
+            <div class="absolute inset-0 bg-blue-900 opacity-80"></div>
         </section>
     </main>
 
     <footer class="bg-gray-900 text-gray-300 py-12">
         <div class="container mx-auto px-4 sm:px-6 lg:px-8">
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-                <!-- Add footer content -->
-            </div>
-            <div class="border-t border-gray-800 mt-12 pt-8 text-center">
-                <p>&copy; 2024 Vitaalzorg. Alle rechten voorbehouden.</p>
-            </div>
-        </div>
-    </footer>
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Contact</h3>
+                    <ul class="space-y-2">
+                        <li>Tel: 0800-1234567</li>
+                        <li>E-mail: info@vitaalzorg.nl</li>
+                        <li>Adres: Hoofdstraat 123</li>
+                        <li>1234 AB Amsterdam</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Informatie</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#about" class="hover:text-white transition-colors duration-300">Over Ons</a></li>
+                        <li><a href="#faq" class="hover:text-white transition-colors duration-300">FAQ</a></li>
+                        <li><a href="https://readthisnow.github.io/vitaalzorg-sta-op-stoel-2025-04-27-nijv1/blog.html" class="hover:text-white transition-colors duration-300">Blog</a></li>
+                        <li><a href="#contact" class="hover:text-white transition-colors duration-300">Contact</a>
 </body>
 </html>
